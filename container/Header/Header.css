@@ -1,0 +1,89 @@
+.app__header {
+   background-color: white;
+}
+
+.header__button {
+    background-color: #865439;
+    color: white;
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.app__header h1 {
+    font-family: var(--font-base);
+    /* color: var(--color-black); */
+    background: #4D004A;
+    background: linear-gradient(to right, #4D004A 10%, #C400BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 0.04em;
+    font-weight: bolder;
+    line-height: 117px;
+    font-size: 90px;
+}
+
+
+.app__header-text {
+  font-family: var(--font-alt);
+  color: rgb(48, 48, 48);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.app__header-img img {
+    width: 80%;
+}
+
+
+/* Custom Carousel CSS */
+.app__header-carousel {
+    /* Add your custom styles here */
+    width: 100%; /* Set the width of the carousel */
+    height: auto; /* Set the height of the carousel */
+    background-color: #8e8e8e; /* Set the background color of the carousel */
+    border-radius: 8px; /* Set the border radius of the carousel */
+    overflow: hidden; /* Hide the overflow content of the carousel */
+}
+  
+.app__header-carousel .slide {
+  /* Customize the styles for the individual slides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  scroll-behavior: smooth; 
+}
+  
+.app__header-carousel .slide img {
+  /* Customize the styles for the slide images */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+  
+.app__header-carousel .carousel-status {
+    font-size: 0px;
+}
+
+@media screen and (max-width: 650px) {
+  .app__header h1 {
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  .app__header-title{
+    font-size: 20px;
+  }
+}
